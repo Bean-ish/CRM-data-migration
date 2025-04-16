@@ -1,5 +1,5 @@
 
-#### notes for configuring metadata file
+#### notes for multi-file bulk importing
 
 1. clean and transform your data into import ready tables
     - [ ]  follow the requirement for each object when uploading, must have fields [reference](https://knowledge.hubspot.com/import-and-export/set-up-your-import-file#required-properties)
@@ -22,6 +22,8 @@
     (3) you shouldn’t assign the alternative id type to columns that allows duplicates in HubSpot<br/>
     (4) also note that you cannot import any values that are auto calculated by hubspot and they actually don’t tell you you can’t until you loading fails which is why they SUCK big time<br/>
     
-5. mapping out associations between tables
+5. mapping out associations between tables <br/>
+   The thing is the number of your objects in column-mapping has to = the number of columns in you data file. So if you want to use a column to create an association (acting as FK) but then also want the data in regular column format you have to duplicate the column and map them out twice <br/>
+   Find you association type and id by either calling schema or property API or checking the doc WHICH IS NOT COMPLETE FOR SOME REASON???
 
-7. send GET request to check the property names to the object and make sure the data type and names match
+7. send GET request to check the property names to the object and make sure the data type, rules, and internal names match
