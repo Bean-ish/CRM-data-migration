@@ -12,7 +12,7 @@
     for each object, you need to:
     
     - [ ]  manage custom properties for legacy data (you can’t import data that will be automatically assigned by HubSpot like “date created”, if you want to preserve historical data in data migration, you need to create custom columns “date created (legacy)”)
-    - [ ]  create other custom properties for your data columns
+    - [ ]  create other custom properties for your data columns if needed
 
 3. save files into acceptable format (e.g. csv)
 
