@@ -16,11 +16,11 @@
 
 3. save files into acceptable format (e.g. csv)
 
-4. configure importing sessions and metadata
-    meta data should be a JSON string then wrapped in a dictionary like this `payload = {”importRequest”: json.dumps(metadata)}`
-    in your header you shouldn’t include  `,"Content-Type": "multipart/form-data”` without the wall, also they automatically add this for you when you are posting multiple files so it is not really necessary 
-    you shouldn’t assign the alternative id type to columns that allows duplicates in HubSpot
-    also note that you cannot import any values that are auto calculated by hubspot and they actually don’t tell you you can’t until you loading fails which is why they SUCK big time
+4. configure importing sessions and metadata <br/>
+    meta data should be a JSON string then wrapped in a dictionary like this `payload = {”importRequest”: json.dumps(metadata)}`<br/>
+    in your header you shouldn’t include  `,"Content-Type": "multipart/form-data”` without the wall, also they automatically add this for you when you are posting multiple files so it is not really necessary<br/> 
+    you shouldn’t assign the alternative id type to columns that allows duplicates in HubSpot<br/>
+    also note that you cannot import any values that are auto calculated by hubspot and they actually don’t tell you you can’t until you loading fails which is why they SUCK big time<br/>
     
 5. mapping out associations between tables
 
